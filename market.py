@@ -2,13 +2,14 @@ import streamlit as st
 import yfinance as yf
 import pandas as pd
 import numpy as np
-from_datetime import datetime, timedelta, date
+from datetime import datetime, timedelta, date  # 正確寫法
 import os
 
 st.set_page_config(page_title="市場熱力圖", layout="wide")
 st.title("每日市場熱力圖（yfinance 版）")
 st.markdown("資料來源：Yahoo Finance，自動生成主要資產漲跌熱力表。")
 
+# ======== 資產清單 ========
 ASSETS = {
     "美元指數": "DX-Y.NYB", "2年美債收益率": "^IRX", "10年美債收益率": "^TNX",
     "TLT(長期美債ETF)": "TLT", "S&P500": "^GSPC", "那斯達克": "^IXIC",
@@ -20,6 +21,7 @@ ASSETS = {
     "那斯達克100(大型科技)": "QQQ"
 }
 
+# ======== 側欄設定 ========
 st.sidebar.header("設定")
 start_of_fetch = st.sidebar.date_input(
     "最早抓取日期", value=date.today() - timedelta(days=400),
