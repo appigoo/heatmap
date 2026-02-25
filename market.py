@@ -11,7 +11,7 @@ st.markdown("資料來源：Yahoo Finance，自動生成主要資產漲跌熱力
 
 # ======== 資產清單 ========
 ASSETS = {
-    "TESLA": "TSLA","APPLE": "AAPL","NVIDIA": "NVDA","GOOGLE": "GOOGL","META": "META","MSFT": "MSFT","AMAZON": "AMZN","NIO": "NIO",,"XPEV": "XPEV",
+    "TESLA": "TSLA","APPLE": "AAPL","NVIDIA": "NVDA","GOOGLE": "GOOGL","META": "META","MSFT": "MSFT","AMAZON": "AMZN","NIO": "NIO","XPEV": "XPEV",
     "美元指數": "DX-Y.NYB", "2年美債收益率": "^IRX", "10年美債收益率": "^TNX",
     "TLT(長期美債ETF)": "TLT", "S&P500": "^GSPC", "那斯達克": "^IXIC",
     "道瓊工業": "^DJI", "羅素2000": "^RUT", "VIX(恐慌指數)": "^VIX",
