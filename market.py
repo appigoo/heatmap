@@ -149,7 +149,7 @@ if st.button("生成市場熱力圖", type="primary"):
 
     style_cols = ["1日", "1週", "1月", "1年", "QTD", "YTD"]
     styled = df.style\
-        .applymap(colorize, subset=style_cols)\
+        .map(colorize, subset=style_cols)\
         .format({"收盤": "{:.4f}", **{col: "{:.2f}%" for col in style_cols}}, na_rep="N/A")\
         .set_properties(**{'text-align': 'center'}, subset=style_cols)
 
